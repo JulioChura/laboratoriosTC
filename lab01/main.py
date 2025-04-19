@@ -1,5 +1,5 @@
 from union import union
-from concatenacion import concatenacion
+from concatenacion import concatenacion, printArray
 from kleene import clausula_kleene
 
 
@@ -9,4 +9,7 @@ lenguajeA = ["ab", "bc", "ce", "ea", "bd"]
 lenguajeB = ["ad", "cb", "da", "eb", "dc"]
 lenguajeC = ["ac", "be", "de", "cd", "ba"]
 
+
 # probar las funciones
+print("Concatenacion= ", end="")
+printArray(concatenacion(lenguajeA, lenguajeB))
