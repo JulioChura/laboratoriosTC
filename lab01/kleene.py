@@ -1,2 +1,2 @@
-def clausula_kleene(str, max_repeticiones=3):
+def clausula_kleene():
     pass
