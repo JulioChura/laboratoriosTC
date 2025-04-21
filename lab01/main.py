@@ -18,4 +18,4 @@ print("Union= ", end="")
 printArray(union(lenguajeB, lenguajeC))
 
 print("Kleene= ", end="")
-printArray(clausula_kleene(lenguajeB, 3))
+printArray(clausula_kleene(lenguajeB, 4))

@@ -1,9 +1,9 @@
 
 
-def clausula_kleene(lenguaje, limiteCaracteres):
+def clausula_kleene(lenguaje, pasadas):
     kleene_list = [""]  # incluir la cadena vacía
 
-    for i in range(1, limiteCaracteres + 1):
+    for i in range( pasadas ):
         nuevas_cadenas = []
         for cadena_existente in kleene_list:
             for palabra in lenguaje:
