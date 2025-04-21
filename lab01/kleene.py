@@ -1,23 +1,25 @@
 
 
-def clausula_kleene(lenguaje, pasadas):
+def clausula_kleene(lenguaje, maxNumCaracteres):
+
     kleene_list = [""]  # incluir la cadena vacía
 
-    for i in range( pasadas ):
+    while True:
         nuevas_cadenas = []
         for cadena_existente in kleene_list:
             for palabra in lenguaje:
+
                 if cadena_existente == "":
                     nueva = palabra
                 else:
                     nueva = cadena_existente + palabra
-                nuevas_cadenas.append(nueva)
+                    
+                if len(nueva) > maxNumCaracteres:
+                    kleene_list.extend(nuevas_cadenas)
+                    return kleene_list
+                if nueva not in kleene_list:
+                    nuevas_cadenas.append(nueva)
         
         kleene_list.extend(nuevas_cadenas)
 
-    kleene_sin_repetidos = []
-    for c in kleene_list:
-        if c not in kleene_sin_repetidos:
-            kleene_sin_repetidos.append(c)
-
-    return kleene_sin_repetidos
+    
