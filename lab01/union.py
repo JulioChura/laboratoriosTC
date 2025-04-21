@@ -1,9 +1,11 @@
 def union(len1, len2):
     resultado = []
-    for cadena1 in len1:
-        resultado.append(cadena1)
-    for cadena2 in len2:
-        resultado.append(cadena2)
+    for cadena in len1:
+        if cadena not in resultado:
+            resultado.append(cadena)
+    for cadena in len2:
+        if cadena not in resultado:
+            resultado.append(cadena)
     return resultado
 
 def printArray(arr):

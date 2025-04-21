@@ -7,7 +7,7 @@ alfabeto = ["a", "b", "c", "d", "e"]
 
 lenguajeA = ["ab", "bc", "ce", "ea", "bd"]
 lenguajeB = ["ad", "cb", "da", "eb", "dc"]
-lenguajeC = ["ac", "be", "de", "cd", "ba"]
+lenguajeC = ["ac", "eb", "de", "dc", "ba"]
 
 
 # probar las funciones
@@ -15,4 +15,4 @@ print("Concatenacion= ", end="")
 printArray(concatenacion(lenguajeA, lenguajeB))
 
 print("Union= ", end="")
-printArray(union(lenguajeA, lenguajeB))
+printArray(union(lenguajeB, lenguajeC))
