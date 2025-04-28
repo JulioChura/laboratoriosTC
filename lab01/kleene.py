@@ -1,5 +1,3 @@
-
-
 def clausula_kleene(lenguaje, maxNumCaracteres):
 
     kleene_list = [""]  # incluir la cadena vacía
