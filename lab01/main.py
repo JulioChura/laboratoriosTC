@@ -3,19 +3,17 @@ from concatenacion import concatenacion, printArray
 from kleene import clausula_kleene
 
 
-alfabeto = ["a", "b", "c", "d", "e"]
+alfabeto = ["x", "y", "z", "w"]
 
-lenguajeA = ["ab", "bc", "ce", "ea", "bd"]
-lenguajeB = ["ad", "cb", "da", "eb", "dc"]
-lenguajeC = ["ac", "eb", "de", "dc", "ba"]
-
+lenguajeA = ["xy", "yxy", "yxz"]
+lenguajeB = ["ywx", "yzx", "yx"]
 
 # probar las funciones
 print("Concatenacion= ", end="")
 printArray(concatenacion(lenguajeA, lenguajeB))
 
 print("Union= ", end="")
-printArray(union(lenguajeB, lenguajeC))
+printArray(union(lenguajeB, lenguajeA))
 
 print("Kleene= ", end="")
 printArray(clausula_kleene(lenguajeB))
