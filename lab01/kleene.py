@@ -1,23 +1,16 @@
-def clausula_kleene(lenguaje, maxNumCaracteres):
+import random
 
-    kleene_list = [""]  # incluir la cadena vacía
+def clausula_kleene(lenguaje):
+    resultado = [""]
+    while len(resultado) < 4:
+        palabra = ""
+        repeticiones = random.randint(1, 3)  
+        for _ in range(repeticiones):
+            palabra += random.choice(lenguaje)
+        if palabra not in resultado: 
+            resultado.append(palabra)
+    resultado.remove("")
+    return resultado
 
-    while True:
-        nuevas_cadenas = []
-        for cadena_existente in kleene_list:
-            for palabra in lenguaje:
-
-                if cadena_existente == "":
-                    nueva = palabra
-                else:
-                    nueva = cadena_existente + palabra
-                    
-                if len(nueva) > maxNumCaracteres:
-                    kleene_list.extend(nuevas_cadenas)
-                    return kleene_list
-                if nueva not in kleene_list:
-                    nuevas_cadenas.append(nueva)
-        
-        kleene_list.extend(nuevas_cadenas)
-
-    
+def printArray(arr):
+    print("{ " + ", ".join(arr) + " }")
