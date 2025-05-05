@@ -8,8 +8,8 @@ def mayorTresSinW(cadena):
     else:
         return True
 
-alfabeto = ["x", "y", "z", "w"]
-cadenas = ["xyy", "wxy", "zxy", "zzx", "wwz"]
+# alfabeto = ["x", "y", "z", "w"]
+# cadenas = ["xyy", "wxy", "zxy", "zzx", "wwz"]
 
 def contXY(cadena):
     verificaX = False
@@ -25,8 +25,8 @@ def contXY(cadena):
         return False
     
 # tiene las 2 validaciones
-def validarLenguaje(array):
-    for palabra in cadenas:
+def validarLenguaje(lenguaje):
+    for palabra in lenguaje:
         if contXY(palabra) and mayorTresSinW(palabra):
             print("La cadena " + palabra + " es VÁLIDA.")
         else:
