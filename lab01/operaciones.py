@@ -2,8 +2,9 @@ def concatenacion(L1, L2):
     resultado = []
     for cadena1 in L1:
         for cadena2 in L2:
-            if cadena1 not in resultado:
-                resultado.append(cadena1 + cadena2)
+            nuevaCadena = cadena1 + cadena2
+            if nuevaCadena not in resultado:
+                resultado.append(nuevaCadena)
     return resultado
 
 def clausura_kleene(lenguaje):
