@@ -1,5 +1,5 @@
 from operaciones import union, concatenacion, clausula_kleene, printArray
-from reglas import validarLenguaje
+from reglas import  mostrarContXY, mostrarMayorTresSinW, validarLenguaje
 
 alfabeto = ["x", "y", "z", "w"]
 
@@ -17,8 +17,18 @@ print("Kleene B*= ", end="")
 printArray(clausula_kleene(lenguajeB))
 
 # probar las reglas
-print("Probando las reglas de validación")
+print("Probando las 2 reglas de validación")
 validarLenguaje(lenguajeA)
 validarLenguaje(lenguajeB)
+
+# probar la regla de que las cadenas si son mayor o igual a 3 y contienen la w, no son válidas
+print("Probando la regla: Las cadena mayor o igual a 3 y que contengan w, no son válidas")
+mostrarMayorTresSinW(lenguajeA)
+
+# probar la regla de que las cadenas deben tener tanto x como y
+print("Probando la regla: Todas las cadenas que contengan tanto x como y")
+mostrarMayorTresSinW(lenguajeA)
+
+
 
 
