@@ -8,16 +8,20 @@ def concatenacion(L1, L2):
                 resultado.append(cadena1 + cadena2)
     return resultado
 
-def clausula_kleene(lenguaje):
+def clausura_kleene(lenguaje):
     resultado = [""]
-    while len(resultado) < 4:
-        palabra = ""
-        repeticiones = random.randint(1, 3)  
-        for _ in range(repeticiones):
-            palabra += random.choice(lenguaje)
-        if palabra not in resultado: 
-            resultado.append(palabra)
-    resultado.remove("")
+    combinaciones = [""]  #Cola de combinaciones 
+    elementos = 6
+
+    while len(resultado) < elementos:
+        palabra = combinaciones.pop(0) #Se extrae y se elimina
+        for simbolo in lenguaje:
+            nueva = palabra + simbolo
+            if nueva not in resultado:
+                resultado.append(nueva)
+                combinaciones.append(nueva)
+                if len(resultado) == elementos:
+                    break
     return resultado
 
 def union(len1, len2):

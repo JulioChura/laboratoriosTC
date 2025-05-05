@@ -1,4 +1,4 @@
-from operaciones import union, concatenacion, clausula_kleene, printArray
+from operaciones import union, concatenacion, clausura_kleene, printArray
 from reglas import  mostrarContXY, mostrarMayorTresSinW, validarLenguaje
 
 alfabeto = ["x", "y", "z", "w"]
@@ -14,7 +14,7 @@ print("Union A U B= ", end="")
 printArray(union(lenguajeB, lenguajeA))
 
 print("Kleene B*= ", end="")
-printArray(clausula_kleene(lenguajeB))
+printArray(clausura_kleene(lenguajeB))
 
 # probar las reglas
 print("Probando las 2 reglas de validación")
