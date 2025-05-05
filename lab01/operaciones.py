@@ -8,7 +8,7 @@ def concatenacion(L1, L2):
 
 def clausura_kleene(lenguaje, potencia = 2):
     cadenasActuales = [""] # Solo contiene cadenas de la última iteración
-    resultado = [] # Acumula todas las cadenas generadas
+    resultado = [""] # Acumula todas las cadenas generadas
     i = 0
     while i < potencia:
         cadenasNuevas = []
