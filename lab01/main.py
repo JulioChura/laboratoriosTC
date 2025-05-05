@@ -23,7 +23,7 @@ validarLenguaje(lenguajeB)
 
 # probar la regla de que las cadenas si son mayor o igual a 3 y contienen la w, no son válidas
 print("Probando la regla: Las cadena mayor o igual a 3 y que contengan w, no son válidas")
-mostrarMayorTresSinW(lenguajeA)
+mostrarMayorTresSinW(lenguajeB)
 
 # probar la regla de que las cadenas deben tener tanto x como y
 print("Probando la regla: Todas las cadenas que contengan tanto x como y")
