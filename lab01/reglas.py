@@ -1,7 +1,6 @@
 def mayorTresSinW(cadena):
     if len(cadena) >= 3:
         if "w" in cadena:
-            # print('La cadena', cadena, 'no es válida porque contiene la letra "w"')
             return False
         else:
             return True

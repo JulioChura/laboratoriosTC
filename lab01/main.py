@@ -3,7 +3,7 @@ from reglas import  mostrarContXY, mostrarMayorTresSinW, validarLenguaje
 
 alfabeto = ["x", "y", "z", "w"]
 
-lenguajeA = ["xy", "yxy", "yxz"]
+lenguajeA = ["yx", "yxy", "yxz"]
 lenguajeB = ["ywx", "yzx", "yx"]
 
 # probar las funciones
