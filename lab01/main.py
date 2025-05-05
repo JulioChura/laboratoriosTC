@@ -27,8 +27,5 @@ mostrarMayorTresSinW(lenguajeA)
 
 # probar la regla de que las cadenas deben tener tanto x como y
 print("Probando la regla: Todas las cadenas que contengan tanto x como y")
-mostrarMayorTresSinW(lenguajeA)
-
-
-
+mostrarContXY(lenguajeA)
 
