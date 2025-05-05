@@ -14,7 +14,7 @@ print("Union A U B= ", end="")
 printArray(union(lenguajeB, lenguajeA))
 
 print("Kleene B*= ", end="")
-printArray(clausura_kleene(lenguajeB, 2))
+printArray(clausura_kleene(lenguajeB))
 
 # probar las reglas
 print("Probando las 2 reglas de validación")
